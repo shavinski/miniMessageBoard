@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+    h1 New Message Form
+    form(action="/new", method="POST")
+        label(for="authorsName") Author Name:
+        input(type="text", id="authorsName", name="authorsName") 
+
+        label(for="message") Message:
+        input(type="text", id="message", name="message") 
+
+        button(type="subm") Submit
